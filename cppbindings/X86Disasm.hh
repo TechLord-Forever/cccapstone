@@ -3,7 +3,7 @@
 #include "Disasm.hpp"
 #include "CsIns.hpp"
 
-using CX86InsClass = CCsIns<x86_insn_group, x86_reg, x86_op_type, x86_insn>;
+typedef public CCsIns<x86_insn_group, x86_reg, x86_op_type, x86_insn> CX86InsClass;
 
 class CX86Disasm64 :
 	public CCsDisasm<CX86InsClass>

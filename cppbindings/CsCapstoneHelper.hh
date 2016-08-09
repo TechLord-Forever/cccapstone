@@ -56,8 +56,8 @@ struct CS_INSN_HOLDER
 			cs_free(m_csInstructions, Count);
 	}
 
-	void operator=(CS_INSN_HOLDER const&) = delete;
-	CS_INSN_HOLDER(const CS_INSN_HOLDER &) = delete;
+	void operator=(CS_INSN_HOLDER const&) { };
+	CS_INSN_HOLDER(const CS_INSN_HOLDER &) { };
 
 protected:
 	template<typename CsInsClassTemp_t>

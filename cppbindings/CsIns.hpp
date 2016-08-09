@@ -10,7 +10,7 @@ class CCsIns
 	CS_HANDLE m_csh;
 	cs_insn* m_ins;
 
-	void operator=(CCsIns const&) = delete;
+	void operator=(CCsIns const&) { };
 	//CCsIns(const CCsIns &) = delete;//==> must be kicked out in the future, and CS_HANDLE not shared_ptr .. need redesign ...
 public:
 	CCsIns(
